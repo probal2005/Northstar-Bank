@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Northstar Bank | Modern Digital Banking</title>
+    <meta
+      name="description"
+      content="Northstar Bank offers premium digital banking, smart savings, and secure payments in one elegant experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">Northstar Bank</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="accounts.html">Accounts</a>
+          <a href="cards.html">Cards</a>
+          <a href="investments.html">Investments</a>
+          <a href="support.html">Support</a>
+          <a href="#portal">Portal</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">☀️</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Trusted by 2M+ customers</p>
+            <h1>Your money, beautifully managed.</h1>
+            <p>
+              Open premium accounts, automate savings, and track every payment in a banking experience designed for speed and confidence.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#portal">Open an account</a>
+              <a class="btn btn-secondary" href="cards.html">Explore cards</a>
+            </div>
+            <ul class="hero-badges">
+              <li>24/7 priority support</li>
+              <li>Biometric login</li>
+              <li>Instant alerts</li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="card-top">
+              <span>Available balance</span>
+              <span class="pill" id="heroPill">+3.2% this month</span>
+            </div>
+            <h2 id="heroBalance">$12,450.50</h2>
+            <p id="heroAccountLabel">Northstar Platinum Account</p>
+            <div class="hero-card-row">
+              <div>
+                <small>Card limit</small>
+                <strong id="cardLimit">$15,000</strong>
+              </div>
+              <div>
+                <small>Rewards</small>
+                <strong id="rewardsValue">2.1x</strong>
+              </div>
+            </div>
+            <div class="chip-list" role="list" aria-label="Account preview options">
+              <button class="chip active" data-balance="12450.50" data-label="Northstar Platinum Account" data-limit="$15,000" data-rewards="2.1x" data-pill="+3.2% this month">Platinum</button>
+              <button class="chip" data-balance="8450.00" data-label="Northstar Savings Account" data-limit="$8,000" data-rewards="1.6x" data-pill="+2.1% this month">Savings</button>
+              <button class="chip" data-balance="27650.25" data-label="Northstar Business Account" data-limit="$25,000" data-rewards="3.0x" data-pill="+4.7% this month">Business</button>
+            </div>
+            <div class="mini-chart" aria-label="Spending progress">
+              <div class="mini-bar"></div>
+              <div class="mini-bar active"></div>
+              <div class="mini-bar"></div>
+            </div>
+            <button class="btn btn-primary full" id="heroCta">Open dashboard</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="container stats-grid">
+          <article>
+            <h3 data-counter="98">0</h3>
+            <p>customer satisfaction score</p>
+          </article>
+          <article>
+            <h3 data-counter="4.2">0</h3>
+            <p>billion secure transactions monthly</p>
+          </article>
+          <article>
+            <h3 data-counter="10">0</h3>
+            <p>minute average support response</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Premium features</p>
+            <h2>Everything designed to help you move faster.</h2>
+          </div>
+          <div class="card-grid">
+            <article class="info-card">
+              <h3>Instant transfers</h3>
+              <p>Send money globally in seconds with live exchange tracking and instant confirmation.</p>
+            </article>
+            <article class="info-card">
+              <h3>Smart savings</h3>
+              <p>Turn everyday purchases into scheduled savings with intelligent round-up tools.</p>
+            </article>
+            <article class="info-card">
+              <h3>Wealth insights</h3>
+              <p>See spending trends, future goals, and custom recommendations in one view.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container split-grid">
+          <div>
+            <p class="eyebrow">Why customers stay</p>
+            <h2>Security and simplicity, without compromise.</h2>
+            <p>
+              Every experience is protected by real-time fraud analysis, responsive support, and elegantly simple account tools.
+            </p>
+          </div>
+          <div class="benefit-list">
+            <div>✓ Face ID and passcode support</div>
+            <div>✓ Instant card locking and controls</div>
+            <div>✓ Personalized savings goals</div>
+            <div>✓ Live spend monitoring</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">How it works</p>
+            <h2>Three steps to a stronger financial routine.</h2>
+          </div>
+          <div class="step-grid">
+            <article class="step-card reveal">
+              <h3>01. Open</h3>
+              <p>Launch your account in minutes with smart onboarding and identity checks built in.</p>
+            </article>
+            <article class="step-card reveal">
+              <h3>02. Automate</h3>
+              <p>Route income, savings, and bills with one-click automation for smoother cash flow.</p>
+            </article>
+            <article class="step-card reveal">
+              <h3>03. Grow</h3>
+              <p>Monitor performance, unlock rewards, and turn everyday banking into long-term progress.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container split-grid">
+          <div class="reveal">
+            <p class="eyebrow">Trusted by ambitious customers</p>
+            <h2>“It feels like a premium assistant for every part of my money.”</h2>
+            <p>Northstar combines live insights, elegant design, and responsive support in a way that feels effortless.</p>
+          </div>
+          <div class="quote-stack">
+            <article class="quote-card reveal">
+              <p>“Transfers are instant and the dashboard feels effortless.”</p>
+              <strong>— Maya, Freelance Designer</strong>
+            </article>
+            <article class="quote-card reveal">
+              <p>“I finally feel in control of savings and everyday spending.”</p>
+              <strong>— Daniel, Product Lead</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="portal">
+        <div class="container portal-grid">
+          <div class="portal-intro">
+            <p class="eyebrow">Digital banking portal</p>
+            <h2>Run your full money plan from a single workspace.</h2>
+            <p>Log in to review balances, send transfers, deposit checks, and estimate loan payments instantly.</p>
+          </div>
+
+          <div class="portal-card">
+            <div id="loginSection" class="panel">
+              <h3>Log in to your account</h3>
+              <form id="loginForm">
+                <label>
+                  Email or username
+                  <input type="text" id="loginUser" placeholder="customer@northstar.com" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" id="loginPassword" placeholder="••••••••" required />
+                </label>
+                <button class="btn btn-primary full" type="submit">Continue</button>
+              </form>
+            </div>
+
+            <div id="dashboardSection" class="panel hidden">
+              <div class="dashboard-header">
+                <div>
+                  <p class="eyebrow">Welcome back</p>
+                  <h3 id="customerName">Ava Chen</h3>
+                </div>
+                <button class="btn btn-secondary" id="logoutBtn">Log out</button>
+              </div>
+
+              <div class="summary-card">
+                <div>
+                  <small>Checking balance</small>
+                  <h2 id="balanceValue">$0.00</h2>
+                </div>
+                <div>
+                  <small>Monthly goal</small>
+                  <div class="progress-bar"><span id="goalFill"></span></div>
+                </div>
+              </div>
+
+              <div class="dashboard-grid">
+                <form id="transferForm" class="stack-card">
+                  <h4>Send money</h4>
+                  <label>
+                    Recipient
+                    <input type="text" id="transferTo" placeholder="Name or account" required />
+                  </label>
+                  <label>
+                    Amount
+                    <input type="number" id="transferAmount" min="1" step="0.01" required />
+                  </label>
+                  <button class="btn btn-primary full" type="submit">Transfer</button>
+                </form>
+
+                <form id="depositForm" class="stack-card">
+                  <h4>Deposit funds</h4>
+                  <label>
+                    Amount
+                    <input type="number" id="depositAmount" min="1" step="0.01" required />
+                  </label>
+                  <button class="btn btn-secondary full" type="submit">Deposit</button>
+                </form>
+              </div>
+
+              <div class="dashboard-grid lower-grid">
+                <div class="stack-card">
+                  <h4>Loan calculator</h4>
+                  <label>
+                    Loan amount
+                    <input type="number" id="loanAmount" min="1000" step="100" value="25000" />
+                  </label>
+                  <label>
+                    Years
+                    <input type="number" id="loanYears" min="1" max="30" value="5" />
+                  </label>
+                  <button class="btn btn-primary full" id="loanCalcBtn" type="button">Calculate payment</button>
+                  <p id="loanResult" class="loan-result">Estimated monthly payment: $0.00</p>
+                </div>
+
+                <div class="stack-card">
+                  <h4>Recent activity</h4>
+                  <ul id="transactionList" class="transaction-list"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Frequently asked</p>
+            <h2>Everything you need to know before you switch.</h2>
+          </div>
+          <div class="faq-list">
+            <details open>
+              <summary>Is online banking secure?</summary>
+              <p>Yes. We combine biometrics, card controls, and real-time alerts to keep your payments protected.</p>
+            </details>
+            <details>
+              <summary>Can I open a joint account?</summary>
+              <p>Absolutely. We support personal and joint account options with shared visibility and controls.</p>
+            </details>
+            <details>
+              <summary>Do you support international transfers?</summary>
+              <p>Yes. Our platform supports fast transfers across supported regions with clear exchange rates.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-banner reveal">
+          <div>
+            <p class="eyebrow">Ready to upgrade?</p>
+            <h2>Build a smarter banking routine in minutes.</h2>
+          </div>
+          <a class="btn btn-primary" href="#portal">Open your account</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-content">
+        <p>© 2026 Northstar Bank. Built for modern banking.</p>
+        <p>
+        © <span id="year"></span>
+        Made with ❤️ by
+
+        <a href="https://github.com/Probal2005" target="_blank">
+            Probal Dhali
+        </a>
+
+        | All Rights Reserved.
+    </p>
+        <a href="mailto:hello@northstarbank.com">hello@northstarbank.com</a>
+      </div>
+    </footer>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
